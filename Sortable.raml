@@ -1,0 +1,15 @@
+#%RAML 1.0 Trait
+queryParameters:
+  sortBy?:
+    displayName: Sort By
+    description: Field to sort by
+    type:
+      enum:
+        <<sortParams>>
+  direction?:
+    displayName: Sorting Direction
+    type:
+      enum:
+        - asc
+        - desc
+    default: asc
